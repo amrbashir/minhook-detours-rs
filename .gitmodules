@@ -1,0 +1,3 @@
+[submodule "minhook-detours"]
+	path = minhook-detours
+	url = https://github.com/m417z/minhook-detours

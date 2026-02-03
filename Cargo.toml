@@ -1,0 +1,17 @@
+[package]
+name = "minhook-detours"
+version = "0.0.0"
+edition = "2024"
+
+[build-dependencies]
+bindgen = "0.72"
+cc = "1.2.54"
+
+[dev-dependencies.windows-sys]
+version = "0.61.2"
+features = [
+    "Win32_Foundation",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_System_LibraryLoader",
+    "Win32_System_IO",
+]
