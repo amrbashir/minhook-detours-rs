@@ -32,6 +32,8 @@ fn main() {
         .allowlist_function("MH_.*")
         .default_enum_style(bindgen::EnumVariation::ModuleConsts)
         .merge_extern_blocks(true)
+        .generate_comments(true)
+        .clang_arg("-fparse-all-comments")
         // Re-export MH_STATUS::* so that users can access the constants directly
         // while also having the MH_STATUS namespace available.
         .raw_line("pub use MH_STATUS::*;")
